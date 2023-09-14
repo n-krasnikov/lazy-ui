@@ -1,9 +1,11 @@
 import './App.css';
+import { Loaders } from './components';
 
 const App = () => {
   return (
     <>
-     Welcome to Lazy-UI
+      <h1>Welcome to Lazy-UI</h1>
+      <Loaders />
     </>
   );
 };
