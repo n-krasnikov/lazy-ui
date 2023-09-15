@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { Container } from '../Container';
 import { CircleLoader, LineLoader } from '../../ui';
 
 import styles from './Loaders.module.scss';
@@ -9,12 +10,12 @@ const Loaders: FC = () => {
     <>
       <h2>Loaders</h2>
       <div className={styles.loaders}>
-        <div className={styles.loaderContainer}>
+        <Container>
           <CircleLoader />
-        </div>
-        <div className={styles.loaderContainer}>
+        </Container>
+        <Container>
           <LineLoader />
-        </div>
+        </Container>
       </div>
     </>
   );

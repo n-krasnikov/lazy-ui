@@ -1,5 +1,6 @@
-import './App.css';
 import { Buttons, Loaders } from './components';
+
+import './App.css';
 
 const App = () => {
   return (
