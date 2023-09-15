@@ -1,0 +1,36 @@
+$width: 50px;
+$height: calc($width/2);
+$padding: 5px;
+$circle-size: calc($height - $padding);
+
+.switch {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-color: #c2c2c2;
+  border-radius: $height;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: $circle-size;
+  background-color: #fff;
+  top: calc($padding/2);
+  left: calc(0% + $padding);
+  transition: all 0.5s;
+}
+.checkbox:checked + .switch::after {
+  left : calc(100% - $circle-size - $padding);
+}
+.checkbox:checked + .switch {
+  background-color: #77c;;
+}
+.checkbox {
+  display : none;
+}
