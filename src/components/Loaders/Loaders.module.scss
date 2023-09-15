@@ -3,8 +3,15 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 80%;
 }
 
 .loaderContainer {
   position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.loaderContainer * {
+  margin: auto;
 }
